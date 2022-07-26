@@ -1,6 +1,6 @@
 {
     "name": "com.kagekirin.upmconfigprovider",
-    "version": "0.0.1",
+    "version": "0.0.0",
     "displayName": ".upmconfig.toml Provider",
     "description": "Unity Editor extension to configure .upmconfig.toml",
     "unity": "2021.1",

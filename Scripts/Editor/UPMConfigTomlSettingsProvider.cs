@@ -52,6 +52,11 @@ Please press the button below to create it."
                 GUILayout.MaxWidth(1200),
             };
 
+            public static GUIStyle upmConfigTomlInfoSpaceStyle = new GUIStyle(GUI.skin.button)
+            {
+                alignment = TextAnchor.UpperLeft,
+            };
+
             public static GUILayoutOption[] upmConfigTomlInfoSpaceOptions = new GUILayoutOption[]
             {
                 GUILayout.Width(EditorGUIUtility.labelWidth),
@@ -117,7 +122,11 @@ Please press the button below to create it."
             {
                 if (m_tomlData == null && m_npmAuthData == null)
                 {
-                    GUILayout.Box(Styles.upmConfigTomlInfo, Styles.upmConfigTomlInfoSpaceOptions);
+                    GUILayout.Box(
+                        Styles.upmConfigTomlInfo,
+                        Styles.upmConfigTomlInfoSpaceStyle,
+                        Styles.upmConfigTomlInfoSpaceOptions
+                    );
                     if (
                         GUILayout.Button(
                             Styles.upmConfigTomlButton,
